@@ -6,7 +6,8 @@
 */
 @import url('./reset.css');
 @import url('./vite-promo.css');
-@import url('./header.css');
+
+@import "simplelightbox/dist/simple-lightbox.min.css";
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +23,84 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.gallery {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image {
+  width: 360px;
+  height: 200px;
+  transition: transform 250ms;
+}
+
+.feedback-form,
+.feedback-form>label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  margin-top: 8px;
+  width: 360px;
+
+  padding: 8px 0 8px 16px;
+}
+
+.textarea {
+  margin-top: 8px;
+  width: 360px;
+  height: 80px;
+  resize: none;
+  padding: 8px 0 8px 16px;
+}
+
+.input:hover {
+  border: 1px solid #000;
+}
+
+.form-submit {
+  padding: 8px 16px;
+  width: 86px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  margin-top: 16px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+
+}
+
+.form-submit:hover {
+  background: #6c8cff;
+}
+
+
+.sl-overlay {
+  background: #2E2F42CC;
+}
+
+.sl-wrapper .sl-navigation button {
+  color: white;
+}
+
+.sl-wrapper .sl-counter {
+  color: white;
+}
+
+.sl-wrapper .sl-close {
+  color: white;
 }
